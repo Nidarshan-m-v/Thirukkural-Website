@@ -10,24 +10,29 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative w-full aspect-[16/7] overflow-hidden mb-10">
-      <div className="absolute inset-0 bg-black bg-opacity-30" />
+      <section className="mt-30 mb-30 aspect-[12/11] lg:relative w-full lg:mt-0 lg:aspect-[16/7] overflow-hidden lg:mb-10">
+      
+      <div className="mt-30 lg:mt-0 sm:mt-0 absolute inset-0">
+        {/* Background Image */}
+      <div className="p-10 sm:mt-0 lg:mt-0 absolute inset-0 bg-black bg-opacity-30" />
+        
         <Image
           src="/thiruvalluvar_kanyakumari_3.jpg"
           alt="Thiruvalluvar Statue at Kanyakumari"
           fill
-          className="object-cover object-top opacity-55"
+          className="lg:mt-0 sm:mt-0  object-cover object-top opacity-55"
           priority
         />
+        </div>
 
         {/* Dark overlay */}
 
         {/* Hero text */}
         <div
-          className="absolute inset-0 flex flex-col justify-center items-center px-4 text-center text-white"
+          className="mt-20 mb-20 lg:absolute lg:mt-0 sm:mt-0 inset-0 flex flex-col justify-center items-center px-4 text-center text-white"
           data-aos="fade-down"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold drop-shadow-lg">
+          <h1 className="text-4xl sm:text-2xl md:text-6xl font-bold drop-shadow-lg ">
             {translations.home_title[language]}
           </h1>
           <p className="mt-4 text-lg sm:text-xl md:text-2xl drop-shadow">

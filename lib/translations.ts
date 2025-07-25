@@ -3,6 +3,10 @@ export const translations = {
     ta: "திருக்குறள்",
     en: "Thirukkural",
   },
+  kural:{
+    ta:"குறள்",
+    en:"Couplet",
+  },
   home_subtitle: {
     ta: "உலகப் பொதுமறை - அறம், பொருள், இன்பம் ஆகிய மூன்றும் கொண்ட தமிழின் பேரறிவுக் கண்ணாடி.",
     en: "A universal scripture of Tamil — covering virtue, wealth, and love.",
@@ -40,10 +44,18 @@ export const translations = {
 
     Many Tamil and English scholars have written revered commentaries on the Kural, adding depth and insight to its meaning.`,
   },
-  
+
   back_button:{
     ta:"பின்னுக்கு",
     en:"Back to Chapters",
+  },
+   previous_chapter: {
+    ta: "முந்தைய அதிகாரம்",
+    en: "Previous Chapter",
+  },
+  next_chapter: {
+    ta: "அடுத்த அதிகாரம்",
+    en: "Next Chapter",
   },
 
   no_results: {

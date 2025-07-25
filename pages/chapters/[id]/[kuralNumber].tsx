@@ -1,10 +1,11 @@
+//pages/chapter/[id]/[KuralNumber].tsx:
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Pagination from "@/components/Pagination";
 import Link from "next/link";
-import { translations } from '@/lib/translations';
-import { useLanguage } from '@/context/LanguageContext';
+import { translations } from "@/lib/translations";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface KuralData {
   kural_number: number;
@@ -27,12 +28,26 @@ export default function KuralDetailPage() {
   const [kuralData, setKuralData] = useState<KuralData | null>(null);
   const [chapterData, setChapterData] = useState<ChapterData | null>(null);
   const [totalKurals, setTotalKurals] = useState<number>(0);
+  const [startKural, setStartKural] = useState<number>(0);
+  const [endKural, setEndKural] = useState<number>(0);
 
   const currentKural = Number(kuralNumber);
 
   const handlePageChange = (newKuralNum: number) => {
     router.push(`/chapters/${id}/${newKuralNum}`);
   };
+
+  useEffect(() => {
+    if (id) {
+      axios
+        .get(`http://localhost:8000/chapter/${id}/range`)
+        .then((res) => {
+          setStartKural(res.data.start_kural);
+          setEndKural(res.data.end_kural);
+        })
+        .catch((err) => console.error("Error fetching kural range:", err));
+    }
+  }, [id]);
 
   // Fetch current Kural
   useEffect(() => {
@@ -72,7 +87,7 @@ export default function KuralDetailPage() {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
         {/* Back Button */}
         <Link href="/chapters">
-          <button className="text-m font-bold bg-white hover:bg-blue-950 hover:text-white px-4 py-2 rounded-lg border text-gray-700 shadow-sm">
+          <button className="text-m font bg-white hover:bg-blue-950 hover:text-white px-4 py-2 rounded-lg border text-gray-700 shadow-sm">
             ← {translations.back_button[language]}
           </button>
         </Link>
@@ -98,11 +113,19 @@ export default function KuralDetailPage() {
         total={totalKurals}
         current={currentKural}
         onPageChange={handlePageChange}
+        endKuralNumber={endKural}
+        startKuralNumber={startKural}
       />
+
+     
 
       {/* Tamil Card */}
       <div className="bg-red-900 p-9 rounded-2xl shadow-md border">
+        <h2 className=" text-1xl font-bold text-amber-950 bg-amber-100 p-2 rounded-lg w-fit deop mb-3">
+        {translations.kural.ta}:  {currentKural}
+      </h2>
         <h2 className="text-4xl font-semibold mb-4 text-yellow-300">தமிழ்</h2>
+        
         <p className="text-2xl text-white">{kuralData.kural_tamil[0]}</p>
         <p className="text-2xl text-white mb-5">{kuralData.kural_tamil[1]}</p>
         <p className="text-gray-200 italic">{kuralData.meaning_tamil}</p>
@@ -110,7 +133,10 @@ export default function KuralDetailPage() {
 
       {/* English Card */}
       <div className="bg-blue-900 p-9 rounded-2xl shadow-md border">
-        <h2 className="text-4xl font-semibold mb-4 text-gray-800">English</h2>
+        <h2 className=" text-1xl font-bold text-cyan-950 bg-cyan-100 p-2 rounded-lg w-fit deop mb-3">
+        {translations.kural.en}:  {currentKural}
+      </h2>
+        <h2 className="text-4xl font-semibold mb-4 text-black">English</h2>
         <p className="text-2xl text-white">{kuralData.kural_english[0]}</p>
         <p className="text-2xl text-white mb-5">{kuralData.kural_english[1]}</p>
         <p className="text-gray-200 italic">{kuralData.meaning_english}</p>

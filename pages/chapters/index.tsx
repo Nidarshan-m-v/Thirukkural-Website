@@ -1,10 +1,9 @@
-// pages/chapters/index.tsx
-import { useEffect, useState } from 'react';
-import SearchBar from '@/components/SearchBar';
-import { useLanguage } from '@/context/LanguageContext';
-import { translations } from '@/lib/translations';
-import axios from 'axios';
-import ChapterCard from '@/components/ChapterCard';
+import { useEffect, useState } from "react";
+import SearchBar from "@/components/SearchBar";
+import { useLanguage } from "@/context/LanguageContext";
+import { translations } from "@/lib/translations";
+import axios from "axios";
+import ChapterCard from "@/components/ChapterCard";
 
 interface Chapter {
   c_id: number;
@@ -17,28 +16,49 @@ export default function ChapterList() {
   const [chapters, setChapters] = useState<Chapter[]>([]);
   const [filteredChapters, setFilteredChapters] = useState<Chapter[]>([]);
   const [chapterCounts, setChapterCounts] = useState<{ [key: number]: number }>({});
+  const [chapterRange, setChapterRange] = useState<{ [key: number]: { start: number; end: number } }>({});
 
   useEffect(() => {
-    axios.get(`${process.env.NEXT_PUBLIC_API_URL}/chapters`)
-      .then(res => {
-        setChapters(res.data);
-        setFilteredChapters(res.data);
+    const fetchChapters = async () => {
+      try {
+        const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/chapters`);
+        const chaptersData = res.data;
+        setChapters(chaptersData);
+        setFilteredChapters(chaptersData);
 
-        // Fetch kural count for each chapter
-        res.data.forEach((chapter: Chapter) => {
-          axios.get(`${process.env.NEXT_PUBLIC_API_URL}/chapter/${chapter.c_id}/count`)
-            .then(res => {
-              setChapterCounts(prev => ({ ...prev, [chapter.c_id]: res.data.count }));
-            });
-        });
-      })
-      .catch(err => console.error('Error fetching chapters:', err));
+        const counts: { [key: number]: number } = {};
+        const range: { [key: number]: { start: number; end: number } } = {};
+        let currentStart = 1;
+
+        for (const chapter of chaptersData) {
+          const countRes = await axios.get(
+            `${process.env.NEXT_PUBLIC_API_URL}/chapter/${chapter.c_id}/count`
+          );
+          const count = countRes.data.count;
+          counts[chapter.c_id] = count;
+
+          range[chapter.c_id] = {
+            start: currentStart,
+            end: currentStart + count - 1,
+          };
+
+          currentStart += count;
+        }
+
+        setChapterCounts(counts);
+        setChapterRange(range);
+      } catch (err) {
+        console.error("Error fetching chapters or counts:", err);
+      }
+    };
+
+    fetchChapters();
   }, []);
 
   const handleSearch = (query: string) => {
     const lowerQuery = query.toLowerCase();
     const results = chapters.filter((chapter) =>
-      (language === 'ta' ? chapter.chapter_tamil : chapter.chapter_english)
+      (language === "ta" ? chapter.chapter_tamil : chapter.chapter_english)
         .toLowerCase()
         .includes(lowerQuery)
     );
@@ -46,8 +66,8 @@ export default function ChapterList() {
   };
 
   return (
-    <main className="max-w-5xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold text-center text-red-800 mb-6">
+    <main className=" mt-15 max-w-5xl sm:mt-5 lg:mt-0 mx-auto px-4 py-10">
+      <h1 className="text-2xl lg:text-3xl font-bold text-center text-red-800 mb-6">
         {translations.nav_chapters[language]}
       </h1>
 
@@ -58,21 +78,24 @@ export default function ChapterList() {
         />
       </div>
 
-      {/* Scrollable section */}
       <div className="h-[70vh] overflow-y-auto mt-4 space-y-4 pr-2">
         {filteredChapters.length > 0 ? (
           filteredChapters.map((chapter) => (
-            <div key={chapter.c_id} className="flex items-start gap-4 w-full">
-              {/* Chapter Number */}
+            <div key={chapter.c_id} className="flex items-start gap-4 w-full mb-5">
               <div className="min-w-[30px] text-lg font-bold text-red-600 pt-3">
                 {chapter.c_id}.
               </div>
-              {/* Chapter Card */}
               <div className="flex-1">
                 <ChapterCard
                   c_id={chapter.c_id}
-                  title={language === 'ta' ? chapter.chapter_tamil : chapter.chapter_english}
+                  title={
+                    language === "ta"
+                      ? chapter.chapter_tamil
+                      : chapter.chapter_english
+                  }
                   kuralCount={chapterCounts[chapter.c_id]}
+                  startKural={chapterRange[chapter.c_id]?.start}
+                  endKural={chapterRange[chapter.c_id]?.end}
                 />
               </div>
             </div>
