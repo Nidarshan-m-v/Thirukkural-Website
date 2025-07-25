@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Pagination from "@/components/Pagination";
 import Link from "next/link";
+import { translations } from '@/lib/translations';
+import { useLanguage } from '@/context/LanguageContext';
 
 interface KuralData {
   kural_number: number;
@@ -18,6 +20,7 @@ interface ChapterData {
 }
 
 export default function KuralDetailPage() {
+  const { language } = useLanguage();
   const router = useRouter();
   const { id, kuralNumber } = router.query;
 
@@ -69,8 +72,8 @@ export default function KuralDetailPage() {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
         {/* Back Button */}
         <Link href="/chapters">
-          <button className="text-sm bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg border text-gray-700 shadow-sm">
-            ← Back to Chapters
+          <button className="text-m font-bold bg-white hover:bg-blue-950 hover:text-white px-4 py-2 rounded-lg border text-gray-700 shadow-sm">
+            ← {translations.back_button[language]}
           </button>
         </Link>
 
@@ -107,7 +110,7 @@ export default function KuralDetailPage() {
 
       {/* English Card */}
       <div className="bg-blue-900 p-9 rounded-2xl shadow-md border">
-        <h2 className="text-4xl font-semibold mb-4 text-yellow-200">English</h2>
+        <h2 className="text-4xl font-semibold mb-4 text-gray-800">English</h2>
         <p className="text-2xl text-white">{kuralData.kural_english[0]}</p>
         <p className="text-2xl text-white mb-5">{kuralData.kural_english[1]}</p>
         <p className="text-gray-200 italic">{kuralData.meaning_english}</p>

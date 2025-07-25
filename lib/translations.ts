@@ -40,6 +40,12 @@ export const translations = {
 
     Many Tamil and English scholars have written revered commentaries on the Kural, adding depth and insight to its meaning.`,
   },
+  
+  back_button:{
+    ta:"பின்னுக்கு",
+    en:"Back to Chapters",
+  },
+
   no_results: {
     ta: "தகவல் எதுவும் கிடைக்கவில்லை",
     en: "No results found",

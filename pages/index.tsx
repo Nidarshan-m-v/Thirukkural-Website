@@ -10,17 +10,17 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-100 w-full  overflow-hidden">
+      <section className="relative w-full aspect-[16/7] overflow-hidden mb-10">
+      <div className="absolute inset-0 bg-black bg-opacity-30" />
         <Image
-          src="/thiruvalluvar_kanyakumari_2.jpg"   // confirm this name+ext
+          src="/thiruvalluvar_kanyakumari_3.jpg"
           alt="Thiruvalluvar Statue at Kanyakumari"
-          fill                                       // instead of layout="fill"
-          style={{ objectFit: "cover", opacity: 90 }} // instead of objectFit prop
-                                     // loads eagerly for hero images
+          fill
+          className="object-cover object-top opacity-55"
+          priority
         />
 
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-30" />
 
         {/* Hero text */}
         <div
@@ -37,7 +37,10 @@ export default function Home() {
       </section>
 
       {/* Main Content */}
-      <main className="max-w-5xl mx-auto p-6 font-serif text-gray-800 space-y-10" data-aos="fade-up">
+      <main
+        className="max-w-5xl mx-auto p-6 font-serif text-gray-800 space-y-10 mb-10"
+        data-aos="fade-up"
+      >
         <section className="text-center">
           <Link
             href="/chapters"
@@ -49,7 +52,9 @@ export default function Home() {
 
         <section className="bg-yellow-50 rounded-xl p-6 shadow-md text-justify leading-relaxed text-lg whitespace-pre-line">
           <h2 className="text-2xl font-semibold text-red-700 mb-3">
-            {language === "ta" ? "திருக்குறளின் அறிமுகம்" : "Introduction to Thirukkural"}
+            {language === "ta"
+              ? "திருக்குறளின் அறிமுகம்"
+              : "Introduction to Thirukkural"}
           </h2>
           {translations.intro_text[language]}
         </section>
