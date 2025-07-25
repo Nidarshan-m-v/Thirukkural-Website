@@ -1,0 +1,60 @@
+/* styles/ToggleSwitch.css */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 19px;
+  margin: 0 9px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffea00;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 2px;
+  bottom: 2.5px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #1849AB;
+  box-shadow: 0 0 0 4px rgba(0, 255, 238, 0.7);
+  outline: none
+}
+
+input + .slider {
+  box-shadow: 0 0 0 4px rgba(255, 129, 3, 0.7);
+  outline: none;
+}
+
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
