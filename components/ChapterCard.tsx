@@ -9,8 +9,8 @@ interface ChapterCardProps {
 
 export default function ChapterCard({ c_id, title, kuralCount }: ChapterCardProps) {
   return (
-    <Link href={`/chapters/${c_id}/1`}>
-      <div className="w-full bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 overflow-hidden">
+    <Link href={`/chapters/${c_id}/1`} className="w-full">
+      <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 overflow-hidden w-full">
         <div className="bg-yellow-100 px-6 py-4">
           <h2 className="text-xl font-bold text-red-700">{title}</h2>
         </div>

@@ -1,3 +1,4 @@
+// pages/chapters/index.tsx
 import { useEffect, useState } from 'react';
 import SearchBar from '@/components/SearchBar';
 import { useLanguage } from '@/context/LanguageContext';
@@ -45,30 +46,39 @@ export default function ChapterList() {
   };
 
   return (
-    <main className="max-w-4xl mx-auto px-4 py-10 space-y-8">
-      <h1 className="text-3xl font-bold text-center text-red-800">
+    <main className="max-w-5xl mx-auto px-4 py-10">
+      <h1 className="text-3xl font-bold text-center text-red-800 mb-6">
         {translations.nav_chapters[language]}
       </h1>
 
-      <SearchBar
-        onSearch={handleSearch}
-        placeholder={translations.search_chapter[language]}
-      />
+      <div className="sticky top-0 z-10 bg-white py-4">
+        <SearchBar
+          onSearch={handleSearch}
+          placeholder={translations.search_chapter[language]}
+        />
+      </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {/* Scrollable section */}
+      <div className="h-[70vh] overflow-y-auto mt-4 space-y-4 pr-2">
         {filteredChapters.length > 0 ? (
           filteredChapters.map((chapter) => (
-            <ChapterCard
-              key={chapter.c_id}
-              c_id={chapter.c_id}
-              title={language === 'ta' ? chapter.chapter_tamil : chapter.chapter_english}
-              kuralCount={chapterCounts[chapter.c_id]}
-            />
+            <div key={chapter.c_id} className="flex items-start gap-4 w-full">
+              {/* Chapter Number */}
+              <div className="min-w-[30px] text-lg font-bold text-red-600 pt-3">
+                {chapter.c_id}.
+              </div>
+              {/* Chapter Card */}
+              <div className="flex-1">
+                <ChapterCard
+                  c_id={chapter.c_id}
+                  title={language === 'ta' ? chapter.chapter_tamil : chapter.chapter_english}
+                  kuralCount={chapterCounts[chapter.c_id]}
+                />
+              </div>
+            </div>
           ))
         ) : (
-          <p className="text-center text-gray-600 col-span-full">
-            {translations.no_results[language] || 'No results found'}
-          </p>
+          <p className="text-center text-gray-600">No results found</p>
         )}
       </div>
     </main>

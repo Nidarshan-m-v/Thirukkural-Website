@@ -64,45 +64,30 @@ export default function KuralDetailPage() {
   if (!kuralData) return <p className="text-center mt-10">Loading...</p>;
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8 space-y-6">
-      {/* Back Button */}
-      <div className="flex items-center justify-between mb-2">
+    <div className="max-w-6xl mx-auto px-4 py-8 space-y-8">
+      {/* Header: Back button + Chapter title centered */}
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
+        {/* Back Button */}
         <Link href="/chapters">
           <button className="text-sm bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg border text-gray-700 shadow-sm">
             ← Back to Chapters
           </button>
         </Link>
 
-        {/* Chapter Name */}
+        {/* Chapter Title */}
         {chapterData && (
-          <h1>
-            <p className="text-2xl sm:text-3xl text-red-800 font-bold text-center">
+          <div className="flex-1 text-center">
+            <h1 className="text-2xl sm:text-3xl text-red-800 font-bold">
               {chapterData.chapter_tamil}
+            </h1>
+            <p className="text-base text-gray-600 mt-1">
+              ({chapterData.chapter_english})
             </p>
-            <br></br>
-            <p className="text-1rem text-gray-600 text-center">({chapterData.chapter_english})</p>
-          </h1>
+          </div>
         )}
 
-        <div className="w-[120px]">
-          {/* Empty placeholder for flex alignment */}
-        </div>
-      </div>
-
-      {/* Tamil Card */}
-      <div className="bg-red-900 p-9 rounded-2xl shadow-md border">
-        <h2 className="text-4xl font-semibold mb-4 text-yellow-300">தமிழ்</h2>
-        <p className="text-2xl text-white">{kuralData.kural_tamil[0]}</p>
-        <p className="text-2xl text-white mb-8">{kuralData.kural_tamil[1]}</p>
-        <p className="text-gray-200 italic">{kuralData.meaning_tamil}</p>
-      </div>
-
-      {/* English Card */}
-      <div className="bg-blue-900 p-9 rounded-2xl shadow-md border">
-        <h2 className="text-4xl font-semibold mb-2 text-blue-800">English</h2>
-        <p className="text-2xl text-white">{kuralData.kural_english[0]}</p>
-        <p className="text-2xl text-white mb-8">{kuralData.kural_english[1]}</p>
-        <p className="text-gray-200 italic">{kuralData.meaning_english}</p>
+        {/* Placeholder for alignment */}
+        <div className="w-[130px] hidden sm:block" />
       </div>
 
       {/* Pagination */}
@@ -111,6 +96,22 @@ export default function KuralDetailPage() {
         current={currentKural}
         onPageChange={handlePageChange}
       />
+
+      {/* Tamil Card */}
+      <div className="bg-red-900 p-9 rounded-2xl shadow-md border">
+        <h2 className="text-4xl font-semibold mb-4 text-yellow-300">தமிழ்</h2>
+        <p className="text-2xl text-white">{kuralData.kural_tamil[0]}</p>
+        <p className="text-2xl text-white mb-5">{kuralData.kural_tamil[1]}</p>
+        <p className="text-gray-200 italic">{kuralData.meaning_tamil}</p>
+      </div>
+
+      {/* English Card */}
+      <div className="bg-blue-900 p-9 rounded-2xl shadow-md border">
+        <h2 className="text-4xl font-semibold mb-4 text-yellow-200">English</h2>
+        <p className="text-2xl text-white">{kuralData.kural_english[0]}</p>
+        <p className="text-2xl text-white mb-5">{kuralData.kural_english[1]}</p>
+        <p className="text-gray-200 italic">{kuralData.meaning_english}</p>
+      </div>
     </div>
   );
 }
