@@ -1,0 +1,2587 @@
+Chapter 1 to 10
+
+INSERT INTO chapter (c_id, chapter_tamil, chapter_english)
+VALUES 
+(1, 'கடவுள் வாழ்த்து', 'The Praise of God'),
+(2, 'வான் சிறப்பு', 'The Excellence of Rain'),
+(3, 'நீத்தார் பெருமை', 'The Greatness of Ascetics'),
+(4, 'அறன்வலியுறுத்தல்', 'Assertion of the Strength of Virtue'),
+(5, 'இல்வாழ்க்கை', 'Domestic Life'),
+(6, 'வாழ்க்கைத் துணைநலம்', 'The Goodness of the Help to Domestic Life'),
+(7, 'புதல்வரைப் பெறுதல்', 'The Obtaining of Sons'),
+(8, 'அன்புடைமை', 'The Possession of Love'),
+(9, 'விருந்தோம்பல்', 'Cherishing Guests'),
+(10, 'இனியவைகூறல்', 'The Utterance of Pleasant Words');
+
+
+Chapter-1 kurals
+
+-- Kural 1
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  1, 1,
+  'அகர முதல எழுத்தெல்லாம் ஆதி',
+  'பகவன் முதற்றே உலகு',
+  'A, as its first of letters, every speech maintains;',
+  'The “Primal Deity” is first through all the world’s domains.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  1, 1,
+  'எழுத்துக்கள்‌ எல்லாம்‌ அகரத்தை அடிப்படையாகக்‌ கொண்டிருக்கின்றன. அதுபோல்‌ உலகம்‌ கடவுளை அடிப்படையாகக்‌ கொண்டிருக்கின்றது.',
+  'As all letters have the letter A for their first, so the world has the eternal God for its first.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  1, 1, 1
+);
+
+
+-- Kural 2
+INSERT INTO kural(
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  2, 2,
+  'கற்றதனால் ஆய பயனென்கொல் வாலறிவன்',
+  'நற்றாள் தொழாஅர் எனின்',
+  'No fruit have men of all their studied lore,',
+  'Save they the ‘Purely Wise One’s’ feet adore.'
+);
+
+INSERT INTO meaning(
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+) VALUES (
+  2, 2,
+  'தூய அறிவு வடிவாக விளங்கும்‌ இறைவனுடைய நல்ல திருவடிகளைத்‌ தொழாமல்‌ இருப்பாரானால்‌, அவர்‌ கற்ற கல்வியினால்‌ ஆகிய பயன்‌ என்ன?',
+  'What profit have those derived from learning, who worship not the good feet of Him who is possessed of pure knowledge?'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+) VALUES (2, 2, 1);
+
+
+-- Kural 3
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  3, 3,
+  'மலர்மிசை ஏகினான் மாணடி சேர்ந்தார்',
+  'நிலமிசை நீடுவாழ் வார்',
+  'His feet, ‘Who o’er the full-blown flower hath past,’ who gain',
+  'In bliss long time shall dwell above this earthly plain.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)VALUES (
+  3, 3,
+  'அன்பரின்‌ அகமாகிய மலரில்‌ வீற்றிருக்கும்‌ கடவுளின்‌ சிறந்த திருவடிகளை இடைவிடாமல்‌ நினைக்கின்றவர்‌ இன்ப உலகில்‌ நிலைத்து வாழ்வார்‌.',
+  'They who are united to the glorious feet of Him who occupies swiftly the flower of the mind, shall flourish in the highest of worlds (heaven).'
+);
+
+INSERT INTO thirukkural  (
+  id, kural_id, chapter_id
+)VALUES (3, 3, 1);
+
+
+-- Kural 4
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)VALUES (
+  4, 4,
+  'வேண்டுதல் வேண்டாமை இலானடி சேர்ந்தார்க்கு',
+  'யாண்டும் இடும்பை இல',
+  'His foot, ‘Whom want affects not, irks not grief,’ who gain',
+  'Shall not, through every time, of any woes complain.'
+);
+
+INSERT INTO meaning(
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+) VALUES (
+  4, 4,
+  'விருப்பு வெறுப்பு இல்லாத கடவுளின்‌ திருவடிகளைப்‌ பொருந்தி நினைக்கின்றவர்க்கு எப்போதும்‌ எவ்விடத்திலும்‌ துன்பம்‌ இல்லை.',
+  'To those who meditate the feet of Him who is void of desire or aversion, evil shall never come.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+) VALUES (4, 4, 1);
+
+
+-- Kural 5
+INSERT INTO kural(
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  5, 5,
+  'இருள்சேர் இருவினையும் சேரா இறைவன்',
+  'பொருள்சேர் புகழ்புரிந்தார் மாட்டு',
+  'The men, who on the “King’s” true praised delight to dwell,',
+  'Affects not them the fruit of deeds done, ill or well.'
+);
+
+INSERT INTO meaning(
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+) VALUES (
+  5, 5,
+  'கடவுளின்‌ உண்மைப்‌ புகழை விரும்பி அன்பு செலுத்துகின்றவரிடம்‌, அறியாமையால்‌ விளையும்‌ இருவகை வினையும்‌ சேர்வதில்லை.',
+  'The two-fold deeds that spring from darkness shall not adhere to those who delight in the true praise of God.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+) VALUES (5, 5, 1);
+
+
+-- Kural 6
+INSERT INTO kural(
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  6, 6,
+  'பொறிவாயில் ஐந்தவித்தான் பொய்தீர் ஒழுக்க',
+  'நெறிநின்றார் நீடுவாழ் வார்',
+  'Long live they blest, who’ve stood in path from falsehood freed;',
+  'His, “Who quenched lusts that from the sense-gates five proceed”.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)VALUES (
+  6, 6,
+  'ஐம்பொறி வாயிலாகப்‌ பிறக்கும்‌ வேட்கைகளை அவித்த இறைவனுடைய பொய்யற்ற ஒழுக்க நெறியில்‌ நின்றவர்‌, நிலை பெற்ற நல்வாழ்க்கை வாழ்வர்‌.',
+  'Those shall long prosper who abide in the faultless way of Him who has destroyed the five desires of the senses.'
+);
+
+INSERT INTO thirukkural  (
+  id, kural_id, chapter_id
+)VALUES (6, 6, 1);
+
+
+-- Kural 7
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)VALUES (
+  7, 7,
+  'தனக்குவமை இல்லாதான் தாள்சேர்ந்தார்க் கல்லால்',
+  'மனக்கவலை மாற்றல் அரிது',
+  'Unless His foot, “to Whom none can compare,” men gain,',
+  '’Tis hard for mind to find relief from anxious pain.'
+);
+
+INSERT INTO meaning(
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+) VALUES (
+  7, 7,
+  'தனக்கு ஒப்புமை இல்லாத தலைவனுடைய திருவடிகளைப்‌ பொருந்தி நினைக்கின்றவர்க்கு அல்லாமல்‌, மற்றவர்க்கு மனக்கவலையை மாற்ற முடியாது.',
+  'Anxiety of mind cannot be removed, except from those who are united to the feet of Him who is incomparable.'
+);
+
+INSERT INTO thirukkural  (
+  id, kural_id, chapter_id
+)VALUES (7, 7, 1);
+
+
+-- Kural 8
+INSERT INTO kural(
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  8, 8,
+  'அறவாழி அந்தணன் தாள்சேர்ந்தார்க் கல்லால்',
+  'பிறவாழி நீந்தல் அரிது',
+  'Unless His feet “the Sea of Good, the Fair and Bountiful,” men gain,',
+  '’Tis hard the further bank of being’s changeful sea to attain.'
+);
+
+INSERT INTO meaning(
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+) VALUES (
+  8, 8,
+  'அறக்கடலாக விளங்கும்‌ கடவுளின்‌ திருவடிகளைப்‌ பொருந்தி நினைக்கின்றவர்க்கு அல்லாமல்‌, மற்றவர்‌ பொருளும்‌ இன்பமுமாகிய மற்றக்‌ கடல்களைக்‌ கடக்க முடியாது.',
+  'None can swim the sea of vice, but those who are united to the feet of that gracious Being who is a sea of virtue.'
+);
+
+INSERT INTO thirukkural  (
+  id, kural_id, chapter_id
+)VALUES (8, 8, 1);
+
+
+-- Kural 9
+INSERT INTO kural(
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  9, 9,
+  'கோளில் பொறியின் குணமிலவே எண்குணத்தான்',
+  'தாளை வணங்காத் தலை',
+  'Before His foot, “the Eight-fold Excellence,” with unbent head,',
+  'Who stands, like palsied sense, is to all living functions dead.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)VALUES (
+  9, 9,
+  'கேட்காத செவி பார்க்காத கண்‌ முதலியனபோல்‌ எண்‌ குணங்களை உடைய கடவுளின்‌ திருவடிகளை வணங்காதவரின்‌ தலைகள்‌ பயனற்றவைகளாம்‌.',
+  'The head that worships not the feet of Him who is possessed of eight attributes, is as useless as a sense without the power of sensation.'
+);
+
+INSERT INTO thirukkural  (
+  id, kural_id, chapter_id
+)VALUES (9, 9, 1);
+
+
+-- Kural 10
+INSERT INTO kural(
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  10, 10,
+  'பிறவிப் பெருங்கடல் நீந்துவர் நீந்தார்',
+  'இறைவன் அடிசேரா தார்',
+  'They swim the sea of births, the “Monarch’s” foot who gain;',
+  'None others reach the shore of being’s mighty main.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)VALUES (
+  10, 10,
+  'இறைவனுடைய திருவடிகளைப்‌ பொருந்தி நினைக்கின்றவர்‌ பிறவியாகிய பெரிய கடலைக்‌ கடக்க முடியும்‌: மற்றவர்‌ கடக்க முடியாது.',
+  'None can swim the great sea of births but those who are united to the feet of God.'
+);
+
+INSERT INTO thirukkural  (
+  id, kural_id, chapter_id
+) VALUES (10, 10, 1);
+
+----------------------------------------------------------------------------
+
+Chapter-2 kurals
+
+-- Kural 11
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  11, 11,
+  'வான்நின்று உலகம் வழங்கி வருதலால்',
+  'தான்அமிழ்தம் என்றுணரற் பாற்று',
+  'The world its course maintains through life that rain unfailing gives;',
+  'Thus rain is known the true ambrosial food of all that lives.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  11, 11,
+  'மழை பெய்ய உலகம் வாழ்ந்துவருவதால்‌, மழையானது உலகத்து வாழும் உயிர்களுக்கு அமிழ்தம் என்று உணரத் தக்கதாகும்.',
+  'By the continuance of rain the world is preserved in existence; it is therefore worthy to be called ambrosia.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  11, 11, 2
+);
+
+-- Kural 12
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  12, 12,
+  'துப்பார்க்குத் துப்பாய துப்பாக்கித் துப்பார்க்குத்',
+  'துப்பாய தூஉம் மழை',
+  'The rain makes pleasant food for eaters rise;',
+  'As food itself, thirst-quenching draught supplies.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  12, 12,
+  'உண்பவர்க்குத் தக்க உணவுப் பொருள்களை விளைவித்துத் தருவதோடு, பருகுவார்க்குத் தானும் ஓர் உணவாக இருப்பது மழையாகும்.',
+  'Rain produces good food, and is itself food.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  12, 12, 2
+);
+
+-- Kural 13
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  13, 13,
+  'விண்இன்று பொய்ப்பின் விரிநீர் வியனுலகத்து',
+  'உள்நின்று உடற்றும் பசி',
+  'If clouds, that promised rain, deceive, and in the sky remain,',
+  'Famine, sore torment, stalks o’er earth’s vast ocean-girdled plain.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  13, 13,
+  'மழை பெய்யாமல் பொய்படுமானால்‌, கடல் சூழ்ந்த அகன்ற உலகமாக இருந்தும் பசி உள்ளே நிலைத்து நின்று உயிர்களை வருத்தும்.',
+  'If the cloud, withholding rain, deceive (our hopes), hunger will long distress the sea-girt spacious world.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  13, 13, 2
+);
+
+-- Kural 14
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  14, 14,
+  'ஏரின் உழாஅர் உழவர் புயல்என்னும்',
+  'வாரி வளங்குன்றிக் கால்',
+  'If clouds their wealth of waters fail on earth to pour,',
+  'The ploughers plough with oxen’s sturdy team no more.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  14, 14,
+  'மழை என்னும் வருவாய் வளம் குன்றிவிட்டால்‌, (உணவுப் பொருள்களை உண்டாக்கும்) உழவரும் ஏர்கொண்டு உழ மாட்டார்.',
+  'If the abundance of wealth imparting rain diminish, the labour of the plough must cease.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  14, 14, 2
+);
+
+-- Kural 15
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  15, 15,
+  'கெடுப்பதூஉம் கெட்டார்க்குச் சார்வாய்மற் றாங்கே',
+  'எடுப்பதூஉம் எல்லாம் மழை',
+  '’Tis rain works all: it ruin spreads, then timely aid supplies;',
+  'As, in the happy days before, it bids the ruined rise.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  15, 15,
+  'பெய்யாமல் வாழ்வைக் கெடுக்க வல்லதும் மழை; மழையில்லாமல் வளம் கெட்டு நொந்தவர்க்குத் துணையாய் அவ்வாறே காக்க வல்லதும் மழையாகும்.',
+  'Rain by its absence ruins men; and by its existence restores them to fortune.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  15, 15, 2
+);
+
+-- Kural 16
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  16, 16,
+  'வளம்குன்றி மாண்ட வாழியார் மற்றுஅதற்கு',
+  'அளங்குன்றி யாமை படும்',
+  'When water fails, functions of nature cease, you say;',
+  'Thus when rain fails, no men can live the appointed day.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  16, 16,
+  'மழை இல்லையென்றால்‌ வாழும் உயிர்களின் வாழ்வும் முடியுமென்பதால்‌, மழை இல்லையெனில்‌ எல்லோரும்‌ வாழும் நாளும்‌ குறையும்‌.',
+  'If rain fails, even those who have attained greatness in life will perish; and thus, all life will decay.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  16, 16, 2
+);
+
+-- Kural 17
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  17, 17,
+  'சிறப்பொடு பூசனை செய்யும்வேண்டும் வானம்',
+  'வறக்குமேல் வான்தான் பணிந்து',
+  'Rain must be praised with festive sacrifice;',
+  'For when it fails, all worship dies.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  17, 17,
+  'மழை பெய்யவேண்டும் என்பதற்காக சிறப்பாகப் பூசை செய்ய வேண்டும். ஏனெனில் மழை பெய்யாமல் போனால் பூசை செய்வதும் முடியாது.',
+  'The sky should be propitiated with special offerings; for when rain fails, even sacrifices cannot be performed.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  17, 17, 2
+);
+
+-- Kural 18
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  18, 18,
+  'வானம் வறக்கின் வழியிலாய்ப் பூசனை',
+  'ஆனும் பனிஅல்ல தில்',
+  'If heaven dry up, no sacred rite is found,',
+  'Nor festival nor worship may abound.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  18, 18,
+  'மழை இல்லையெனில், வழிபாடுகள் நடைபெற முடியாது; பக்தியால் செய்யும் பூசனைகள் கூட முடியாமல் போய்விடும்.',
+  'When the heavens withhold rain, rituals and divine worship also come to a standstill.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  18, 18, 2
+);
+
+-- Kural 19
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  19, 19,
+  'தானம் தவமிரண்டும் தங்கா வியனுலகம்',
+  'வானம் வழங்கா தெனின்',
+  'No charity, no penance can be practiced here below,',
+  'If heaven its watery treasures should withhold.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  19, 19,
+  'வானம் மழை பெய்யாமல் இருந்தால், இந்தப் பரந்த உலகத்தில் தானமும் தவமும் நிறைவேறாது.',
+  'If rain does not fall, this vast world will not support acts of charity and penance.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  19, 19, 2
+);
+
+-- Kural 20
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  20, 20,
+  'நீரின்றி அமையாது உலகெனின் யார்யார்க்கும்',
+  'வானின்றி அமையாது ஒழுக்கு',
+  'If water fails, no life on earth can stay;',
+  'And without rain, no moral life holds sway.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  20, 20,
+  'நீர் இல்லையெனில் உலகம் இருக்க முடியாது என்பதைப் போல, மழை இல்லையெனில் ஒழுக்கமும் இருக்க முடியாது.',
+  'Just as the world cannot exist without water, moral conduct cannot be maintained without rainfall.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  20, 20, 2
+);
+
+------------------------------------------------------------------------------------
+
+Chapter-3 Kurals
+
+--kural21
+
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  21, 21,
+  'ஒழுக்கத்து நீத்தார் பெருமை விழுப்பத்து',
+  'வேண்டும் பனுவல் துணிவு',
+  'The settled rule of every code requires, as highest good,',
+  'Their greatness who, renouncing all, true to their rule have stood.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  21, 21,
+  'ஒழுக்கத்தில்‌ நிலைத்துநின்று பற்றுவிட்டவர்களின்‌ பெருமையைச்‌ சிறந்ததாகப்‌ போற்றிக்‌ கூறுவதே நூல்களின்‌ துணிவாகும்‌.',
+  'The end and aim of all treatise is to extol beyond all other excellence, the greatness of those who, while abiding in the rule of conduct peculiar to their state, have abandoned all desire.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  21, 21, 3
+);
+
+--kural 22
+
+
+
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  22, 22,
+  'துறந்தார் பெருமை துணைக்கூறின் வையத்து',
+  'இறந்தாரை எண்ணிக்கொண் டற்று',
+  'As counting those that from the earth have passed away,',
+  '‘Tis vain attempt the might of holy men to say.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  22, 22,
+  'பற்றுகளைத்‌ துறந்தவர்களின்‌ பெருமையை அளந்து கூறுதல்‌, உலகத்தில்‌ இதுவரையில்‌ பிறந்து இறந்தவர்களை எண்ணிக்‌ கணக்கிடுவதைப்‌ போன்றது.',
+  'To describe the measure of the greatness of those who have forsaken the two-fold desires, is like counting the dead.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  22, 22, 3
+);
+
+
+--kural 23
+
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  23, 23,
+  'இருமை வகைதெரிந்து ஈண்டுஅறம் பூண்டார்',
+  'பெருமை பிறங்கிற்று உலகு',
+  'Their greatness earth transcends, who, way of both worlds weighed,',
+  'In this world take their stand, in virtue’s robe arrayed.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  23, 23,
+  'பிறப்பு வீடு என்பன போல்‌ இரண்டிரண்டாக உள்ளவைகளின்‌ கூறுபாடுகளை ஆராய்ந்தறிந்து அறத்தை மேற்கொண்டவரின்‌ பெருமையே உலகத்தில்‌ உயர்ந்தது.',
+  'The greatness of those who have discovered the properties of both states of being, and renounced the world, shines forth on earth (beyond all others).'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  23, 23, 3
+);
+
+
+--kural 24
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  24, 24,
+  'உரனென்னும் தோட்டியான் ஓரைந்தும் காப்பான்',
+  'வரனென்னும் வைப்பிற்கோர் வித்து',
+  'He, who with firmness, curb the five restrains,',
+  'Is seed for soil of yonder happy plains.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  24, 24,
+  'அறிவு என்னும்‌ கருவியினால்‌ ஐம்பொறிகளாகிய யானைகளை அடக்கிக்‌ காக்க வல்லவன்‌, மேலான வீட்டிற்கு விதை போன்றவன்‌.',
+  'He who guides his five senses by the hook of wisdom will be a seed in the world of heaven.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  24, 24, 3
+);
+
+--kural 25
+
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  25, 25,
+  'ஐந்தவித்தான் ஆற்றல் அகல்விசும்பு ளார்கோமான்',
+  'இந்திரனே சாலுங் கரி',
+  'Their might who have destroyed ‘the five’, shall soothly tell',
+  'Indra, the lord of those in heaven’s wide realms that dwell.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  25, 25,
+  'ஐந்து புலன்களாலாகும்‌ ஆசைகளை ஒழித்தவனுடைய வல்லமைக்கு, வானுலகத்தாரின்‌ தலைவனாகிய இந்திரனே போதுமான சான்று ஆவான்‌.',
+  'Indra, the king of the inhabitants of the spacious heaven, is himself, a sufficient proof of the strength of him who has subdued his five senses.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  25, 25, 3
+);
+
+
+--kural 26
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  26, 26,
+  'செயற்கரிய செய்வார் பெரியர் சிறியர்',
+  'செயற்கரிய செய்கலா தார்',
+  'Things hard in the doing will great men do;',
+  'Things hard in the doing the mean eschew.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  26, 26,
+  'செய்வதற்கு அருமையான செயல்களைச்‌ செய்ய வல்லவரே பெரியோர்‌. செய்வதற்கு அரிய செயல்களைச்‌ செய்யமாட்டாதவர்‌ சிறியோர்‌.',
+  'The great will do those things which is difficult to be done; but the mean cannot do them.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  26, 26, 3
+);
+
+--kural 27
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  27, 27,
+  'சுவைஒளி ஊறுஓசை நாற்றமென ஐந்தின்',
+  'வகைதெரிவான் கட்டே உலகு',
+  'Taste, light, touch, sound, and smell: who knows the way',
+  'Of all the five,- the world submissive owns his sway.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  27, 27,
+  'சுவை ஒளி ஊறு ஓசை நாற்றம்‌ என்று சொல்லப்படும்‌ ஐந்தன்‌ வகைகளையும்‌ ஆராய்ந்து அறிய வல்லவனுடைய அறிவில்‌ உள்ளது உலகம்‌.',
+  'The world is within the knowledge of him who knows the properties of taste, sight, touch, hearing and smell.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  27, 27, 3
+);
+
+--kural 28
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  28, 28,
+  'நிறைமொழி மாந்தர் பெருமை நிலத்து',
+  'மறைமொழி காட்டி விடும்',
+  'The might of men whose word is never vain,',
+  'The ‘secret word’ shall to the earth proclaim.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  28, 28,
+  'பயன்‌ நிறைந்த மொழிகளில்‌ வல்ல சான்றோரின்‌ பெருமையை, உலகத்தில்‌ அழியாமல்‌ விளங்கும்‌ அவர்களுடைய மறைமொழிகளே காட்டிவிடும்‌.',
+  'The hidden words of the men whose words are full of effect, will shew their greatness to the world.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  28, 28, 3
+);
+
+
+--kural 29
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  29, 29,
+  'குணமென்னும் குன்றேறி நின்றார் வெகுளி',
+  'கணமேயும் காத்தல் அரிது',
+  'The wrath ‘tis hard e’en for an instant to endure,',
+  'Of those who virtue’s hill have scaled, and stand secure.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  29, 29,
+  'நல்ல பண்புகளாகிய மலையின்மேல்‌ ஏறிநின்ற பெரியோர்‌, ஒரு கணப்பொழுதே சினம்‌ கொள்வார்‌ ஆயினும்‌ அதிலிருந்து ஒருவரைக்‌ காத்தல்‌ அரிதாகும்‌.',
+  'The anger of those who have ascended the mountain of goodness, though it continue but for a moment, cannot be resisted.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  29, 29, 3
+);
+
+
+--kural 30
+
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  30, 30,
+  'அந்தணர் என்போர் அறவோர்மற் றெவ்வுயிர்க்கும்',
+  'செந்தண்மை பூண்டொழுக லான்',
+  'Towards all that breathe, with seemly graciousness adorned they live;',
+  'And thus to virtue’s sons the name of ‘Anthanar’ men give,'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  30, 30,
+  'எல்லா உயிர்களிடத்திலும்‌ செம்மையான அருளை மேற்கொண்டு ஒழுகுவதால்‌ அறவோரே அந்தணர்‌ எனப்படுவோர்‌ ஆவர்‌.',
+  'The virtuous are truly called Anthanar; because in their conduct towards all creatures they are clothed in kindness.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  30, 30, 3
+);
+
+
+-------------------------------------------------------------------------------------
+
+Chapter-4 Kurals
+
+-- Kural 31
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  31, 31,
+  'சிறப்புஈனும் செல்வமும் ஈனும் அறத்தினூஉங்கு',
+  'ஆக்கம் எவனோ உயிர்க்கு',
+  'It yields distinction, yields prosperity;',
+  'what gain Greater than virtue can a living man obtain?'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  31, 31,
+  'அறம்‌, சிறப்பையும்‌ அளிக்கும்‌; செல்வத்தையும்‌ அளிக்கும்‌; ஆகையால்‌ உயிர்க்கு அத்தகைய அறத்தைவிட நன்மையானது வேறு யாது?',
+  'Virtue will confer heaven and wealth; what greater source of happiness can man possess?'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  31, 31, 4
+);
+
+-- Kural 32
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  32, 32,
+  'அறத்தினூஉங்கு ஆக்கமும் இல்லை அதனை',
+  'மறத்தலின் ஊங்கில்லை கேடு',
+  'No greater gain than virtue aught can cause;',
+  'No greater loss than life oblivious of her laws.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  32, 32,
+  'ஒருவருடைய வாழ்க்கைக்கு அறத்தைவிட நன்மையானதும்‌ இல்லை; அறத்தைப்‌ போற்றாமல்‌ மறப்பதைவிடக்‌ கெடுதியானதும்‌ இல்லை.',
+  'There can be no greater source of good than (the practice of) virtue; there can be no greater source of evil than the forgetfulness of it.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  32, 32, 4
+);
+
+-- Kural 33
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  33, 33,
+  'ஒல்லும் வகையான் அறவினை ஓவாதே',
+  'செல்லும்வாய் எல்லாஞ் செயல்',
+  'To finish virtue’s work with ceaseless effort strive,',
+  'What way thou may’st, where’er thou see’st the work may thrive.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  33, 33,
+  'செய்யக்கூடிய வகையால்‌, எக்காரணத்தாலும்‌ விடாமல்‌ செல்லுமிடமெல்லாம்‌ அறச்செயலைப்‌ போற்றிச்‌ செய்ய வேண்டும்‌.',
+  'As much as possible, in every way, incessantly practise virtue.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  33, 33, 4
+);
+
+-- Kural 34
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  34, 34,
+  'மனத்துக்கண் மாசிலன் ஆதல் அனைத்துஅறன்',
+  'ஆகுல நீர பிற',
+  'Spotless be thou in mind! This only merits virtue’s name;',
+  'All else, mere pomp of idle sound, no real worth can claim.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  34, 34,
+  'ஒருவன்‌ தன்‌ மனத்தில்‌ குற்றம்‌ இல்லாதவனாக இருக்க வேண்டும்‌; அறம்‌ அவ்வளவே; மனத்தூய்மை இல்லாத மற்றவை ஆரவாரத்‌ தன்மை உடையவை.',
+  'Let him who does virtuous deeds be of spotless mind; to that extent is virtue; all else is vain show.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  34, 34, 4
+);
+
+-- Kural 35
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  35, 35,
+  'அழுக்காறு அவாவெகுளி இன்னாச்சொல் நான்கும்',
+  'இழுக்கா இயன்றது அறம்',
+  '’Tis virtue when, his footsteps sliding not through envy, wrath,',
+  'Lust, evil speech-these four, man onwards moves in ordered path.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  35, 35,
+  'பொறாமை, ஆசை, சினம்‌, கடுஞ்சொல்‌ ஆகிய இந்த நான்கு குற்றங்களுக்கும்‌ இடங்கொடுக்காமல்‌ அவற்றைக்‌ கடிந்து ஒழுகுவதே அறமாகும்‌.',
+  'That conduct is virtue which is free from these four things, viz, malice, desire, anger and bitter speech.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  35, 35, 4
+);
+
+-- Kural 35
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  35, 35,
+  'அழுக்காறு அவாவெகுளி இன்னாச்சொல் நான்கும்',
+  'இழுக்கா இயன்றது அறம்',
+  '‘Tis virtue when, his footsteps sliding not through envy, wrath,',
+  'Lust, evil speech—these four, man onwards moves in ordered path.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  35, 35,
+  'பொறாமை, ஆசை, சினம், கடுஞ்சொல் ஆகிய இந்த நான்கு குற்றங்களுக்கும் இடங்கொடுக்காமல் அவற்றைக் கடிந்து ஒழுகுவதே அறமாகும்.',
+  'That conduct is virtue which is free from these four things: malice, desire, anger and bitter speech.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  35, 35, 4
+);
+
+
+-- Kural 36
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  36, 36,
+  'அன்றறிவாம் என்னாது அறஞ்செய்க மற்றது',
+  'பொன்றுங்கால் பொன்றாத் துணை',
+  'Do deeds of virtue now. Say not, ‘‘To-morrow we’ll be wise’’;',
+  'Thus, when thou diest, shalt thou find a help that never dies.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  36, 36,
+  'இளைஞராக உள்ளவர் பிற்காலத்தில் பார்த்துக் கொள்ளலாம் என்று எண்ணாமல் அறம் செய்யவேண்டும். அதுவே உடல் அழியும் காலத்தில் அழியாத் துணையாகும்.',
+  'Defer not virtue to another day; receive her now; and at the dying hour she will be your undying friend.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  36, 36, 4
+);
+
+-- Kural 37
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  37, 37,
+  'அறத்தாற்றின் இல்வாழ்க்கை ஆற்றின் புறத்தாற்றின்',
+  'போஒய்ப் பெறுவ நிலை.',
+  'If man in virtue firmly grounded stand,',
+  'What gain is his who leaves the home for lonely forest land?'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  37, 37,
+  'ஒருவன் அறத்தின் தளத்தில் நின்று இயன்றபடி இல்வாழ்க்கை நடத்துவான் எனில், தவமிட்ட வனவாச வாழ்க்கையைக் கடந்து நிற்கும் நிலையைப் பெறுவான்.',
+  'If one in the householder’s life lives by virtue, he shall attain the position which ascetics seek by renouncing the world.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  37, 37, 4
+);
+
+-- Kural 38
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  38, 38,
+  'செயற்கரிய செய்வார் பெரியர் சிறியர்',
+  'செயற்கரியதான் செயாதார்.',
+  'Great are the men who do things hard to do;',
+  'The mean are they that nothing do pursue.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  38, 38,
+  'அறம் போன்ற செயற்கரிய செயல்களைச் செய்வார்கள் பெரியவர்கள்; அதைச் செய்யாமல் விலகினார்கள் சிறியவர்கள்.',
+  'Those who do the difficult deeds of virtue are the great; those who avoid them are the base.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  38, 38, 4
+);
+
+-- Kural 39
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  39, 39,
+  'அறஞ்சாரா நெஞ்சுடையார் ஆகுலம் தேரும்',
+  'பிறன்சாரா பீடு நகும்.',
+  'Who leaves the path of right, his heart untrue,',
+  'Will reap disgrace, though all the world him view.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  39, 39,
+  'அறத்தை விரும்பாத மனத்தினர், பெரியாராகச் சேர்ந்த போதிலும் அகத்தில் துன்பமடைந்து வீழ்ச்சி அடைவார்கள்.',
+  'Those whose hearts are not inclined toward virtue will fall into distress, even if they outwardly associate with greatness.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  39, 39, 4
+);
+
+-- Kural 40
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  40, 40,
+  'தவம்போல் இனிது அறம் ஆகுஇனிது அவ்வம்',
+  'இல்லாத வாழ்க்கை நன்று.',
+  'Sweet is virtue like austerity;',
+  'Sweeter still, the home with no vice to see.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id, meaning_tamil, meaning_english
+)
+VALUES (
+  40, 40,
+  'தவம் போல் இனிமை உடையதுதான் அறம். அதைவிட இனிமையானது, தவமில்லாமல் அறம் நிறைந்த இல்வாழ்க்கை.',
+  'Virtue is as delightful as asceticism; but even more delightful is a life of virtue free from austerities.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  40, 40, 4
+);
+
+-----------------------------------------------------------------------------------
+
+Chaper-5 Kurals
+
+-- Kural 41
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  41, 41,
+  'இல்வாழ்வான் என்பான் இயல்புடைய மூவர்க்கும்',
+  'நல்லாற்றின் நின்ற துணை',
+  'The men of household virtue, firm in way of good, sustain',
+  'The other orders three that rule professed maintain.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+) VALUES (
+  41, 41,
+  'இல்லறத்தில்‌ வாழ்பவனாகச்‌ சொல்லப்படுகின்றவன்‌ அறத்தின்‌ இயல்பை உடைய மூவர்க்கும்‌ நல்வழியில்‌ நிலை பெற்ற துணையாவான்‌.',
+  'He will be called a (true) householder, who is a firm support to the virtuous of the three orders in their good path.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+) VALUES (
+  41, 41, 4
+);
+
+-- Kural 42
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  42, 42,
+  'துறந்தார்க்கும் துவ்வா தவர்க்கும் இறந்தார்க்கும்',
+  'இல்வாழ்வான் என்பான் துணை',
+  'To anchorites, to indigent, to those who’ve passed away,',
+  'The man for household virtue famed is needful held and stay.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+) VALUES (
+  42, 42,
+  'துறந்தவர்க்கும்‌ வறியவர்க்கும்‌ தன்னிடத்தே இறந்தவர்க்கும்‌ இல்லறம்‌ மேற்கொண்டு வாழ்கின்றவன்‌ துணையாவன்.',
+  'He will be said to flourish in domestic virtue who aids the forsaken, the poor, and the dead.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+) VALUES (
+  42, 42, 4
+);
+
+-- Kural 43
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  43, 43,
+  'தென்புலத்தார் தெய்வம் விருந்தொக்கல் தானென்றாங்கு',
+  'ஐம்புலத்தாறு ஓம்பல் தலை',
+  'The manes, God, guests kindred, self, in due degree,',
+  'These five to cherish well is chiefest charity.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+) VALUES (
+  43, 43,
+  'தென்புலத்தார்‌, தெய்வம்‌, விருந்தினர்‌, சுற்றத்தார்‌, தான்‌ என்ற ஐவகையிடத்தும்‌ அறநெறி தவறாமல்‌ போற்றுதல்‌ சிறந்த கடமையாகும்‌.',
+  'The chief (duty of the householder) is to preserve the five-fold rule (of conduct) towards the manes, the Gods, his guests, his relations and himself.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+) VALUES (
+  43, 43, 4
+);
+
+-- Kural 44
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  44, 44,
+  'பழியஞ்சிப் பாத்தூண் உடைத்தாயின் வாழ்க்கை',
+  'வழியெஞ்சல் எஞ்ஞான்றும் இல்',
+  'Who shares his meal with other, while all guilt he shuns,',
+  'His virtuous line unbroken though the ages runs.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+) VALUES (
+  44, 44,
+  'பொருள்‌ சேர்க்கும்போது பழிக்கு அஞ்சிச்‌ சேர்த்து, செலவு செய்யும்போது பகுத்து உண்பதை மேற்கொண்டால்‌, அவ்வாழ்க்கையின்‌ ஒழுங்கு எப்போதும்‌ குறைவதில்லை.',
+  'His descendants shall never fail who, living in the domestic state, fears vice (in the acquisition of property) and shares his food (with others).'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+) VALUES (
+  44, 44, 4
+);
+
+-- Kural 45
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  45, 45,
+  'அன்பும் அறனும் உடைத்தாயின் இல்வாழ்க்கை',
+  'பண்பும் பயனும் அது',
+  'If love and virtue in the household reign,',
+  'This is of life the perfect grace and gain.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+) VALUES (
+  45, 45,
+  'இல்வாழ்க்கை அன்பும்‌ அறமும்‌ உடையதாக விளங்குமானால்‌, அந்த வாழ்க்கையின்‌ பண்பும்‌ பயனும்‌ அதுவே ஆகும்‌.',
+  'If the married life possess love and virtue, these will be both its duty and reward.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+) VALUES (
+  45, 45, 4
+);
+
+-- Kural 46
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  46, 46,
+  'அறத்தாற்றின் இல்வாழ்க்கை ஆற்றின் பொருளாற்றி',
+  'இல்லாதார்க்கும் ஈவு',
+  'Who shares his wealth with others, to the virtuous true,',
+  'A householder is he, who gives though needy too.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+) VALUES (
+  46, 46,
+  'அறத்தின் அடிப்படையில் இல்லற வாழ்க்கையை மேற்கொண்டு, பொருள் சேர்த்து, தன்னிடத்தில் இல்லாதவர்களுக்கும் கொடுப்பவனாக இருக்க வேண்டும்.',
+  'If a man in the domestic state, after accumulating wealth, make gifts also to those who are destitute, such a life is worthy of the name of virtue.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+) VALUES (
+  46, 46, 4
+);
+
+-- Kural 47
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  47, 47,
+  'அறத்தாறு ஆன்ற இல்வாழ்க்கை அஃதொருவன்',
+  'புற்றத்து புழுநன்று அது',
+  'The life domestic rightly led is virtue''s path;',
+  'Others are but as creeping things that feed on earth.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+) VALUES (
+  47, 47,
+  'அற நெறியில் நிலைத்த இல்லற வாழ்க்கை வாழும் மனிதன் தவிர மற்றவர் பூமியில் புழுதியில் கிடக்கும் புழுக்கள் போலர்.',
+  'He who lives in the domestic state with love and virtue is worth calling a man; the rest are but crawling creatures of the earth.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+) VALUES (
+  47, 47, 4
+);
+
+-- Kural 48
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  48, 48,
+  'எண்குணத்தான் எய்தலில்வாழ்க்கை அஃதிலார்',
+  'எண்குணத்தான் எய்தல் அரிது',
+  'Domestic life lived well by men of household grace,',
+  'Is virtue''s path supreme none else can trace.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id, meaning_tamil, meaning_english
+) VALUES (
+  48, 48,
+  'இல்வாழ்க்கையில் எண் குணங்களை நிரூபித்து வாழும் வாழ்க்கை உயர்ந்தது; மற்றவரால் அவ்வழி செல்ல முடியாது.',
+  'Domestic life, if properly regulated by those who walk in the path of virtue, is an exalted state; to others it will be difficult to follow that way.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+) VALUES (
+  48, 48, 4
+);
+
+-- Kural 49
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  49, 49,
+  'இல்லாற்றால் எய்திய ஆக்கமும் வையகத்து',
+  'உல்லாத தல்லது அற்று',
+  'The wealth acquired with household duty done,',
+  'Will be a help in this world and in Heaven won.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id, meaning_tamil, meaning_english
+) VALUES (
+  49, 49,
+  'இல்லற வாழ்வின் வழியில் கிடைத்த செல்வம் இம்மையிலும் மறுமையிலும் பயன் தரும்.',
+  'The wealth acquired in the domestic state by just means will yield both the temporal and spiritual rewards.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+) VALUES (
+  49, 49, 4
+);
+
+-- Kural 50
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  50, 50,
+  'இல்லாதான் என்கொல் உயிர்வாழ்தல் ஆற்றின்',
+  'வல்லதூஉம் ஆயினும் கேடு',
+  'What good can greatness gain, if household love be not?',
+  'Though high as heaven he soars, he''ll fall, forgot.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id, meaning_tamil, meaning_english
+) VALUES (
+  50, 50,
+  'இல்லறத்தின் வழியில் வாழாதவன் உயிர் வாழ்வது எப்படி? அதற்குத் தக்கவனாக இருந்தாலும் அது துன்பமாய்தான் முடியும்.',
+  'Of what avail is a man''s excellence, if he lives not in the domestic state? Even though he be powerful, it will be a ruinous life.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+) VALUES (
+  50, 50, 4
+);
+
+--------------------------------------------------------------------------
+
+Chater-6 kurals
+
+-- Kural 51
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (51, 51, 'மனைக்தக்க மாண்புடையள் ஆகித்தற் கொண்டான்', 'வளத்தக்காள் வாழ்க்கைத் துணை', 
+'As doth the house beseem, she shows her wifely dignity;', 
+'As doth her husband’s wealth befit, she spends: help - meet is she.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (51, 51, 
+'இல்வாழ்க்கைக்கு ஏற்ற நற்பண்பு உடையவளாகித்‌ தன்‌ கணவனுடைய பொருள்‌ வளத்துக்குத்‌ தக்க வாழ்க்கை நடத்துகின்றவளே வாழ்க்கைத்‌ துணை ஆவாள்‌.',
+'She who has the excellence of home virtues, and can expend within the means of her husband, is a help in the domestic state.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id) VALUES (51, 51, 6);
+
+-- Kural 52
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (52, 52, 'மனைமாட்சி இல்லாள்கண் இல்லாயின் வாழ்க்கை', 'எனைமாட்சித் தாயினும் இல்',
+'If household excellence be wanting in the wife,', 
+'Howe’er with splendour lived, all worthless is the life.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (52, 52, 
+'இல்வாழ்க்கைக்குத்‌ தக்க நற்பண்பு மனைவியிடம்‌ இல்லையானால்‌. ஒருவனுடைய வாழ்க்கை வேறு எவ்வளவு சிறப்புடையதானாலும்‌ பயன்‌ இல்லை.',
+'If the wife be devoid of domestic excellence, whatever (other) greatness be possessed, the conjugal state, is nothing.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id) VALUES (52, 52, 6);
+
+-- Kural 53
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (53, 53, 'இல்லதென் இல்லவள் மாண்பானால் உள்ளதென்', 'இல்லவள் மாணாக் கடை',
+'There is no lack within the house, where wife in worth excels,', 
+'There is no luck within the house, where wife dishonoured dwells.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (53, 53, 
+'மனைவி நற்பண்பு உடையவளானால்‌ வாழ்க்கையில்‌ இல்லாதது என்ன? அவள்‌ நற்பண்பு இல்லாதவளானால்‌ வாழ்க்கையில்‌ இருப்பது என்ன?',
+'If his wife be eminent (in virtue), what does (that man) not possess? If she be without excellence, what does (he) possess?');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id) VALUES (53, 53, 6);
+
+-- Kural 54
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (54, 54, 'பெண்ணின் பெருந்தக்க யாவுள கற்பென்னும்', 'திண்மைஉண் டாகப் பெறின்',
+'If woman might of chastity retain,', 
+'What choicer treasure doth the world contain?');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (54, 54, 
+'இல்வாழ்க்கையில்‌ கற்பு என்னும்‌ உறுதிநிலை இருக்கப்‌ பெற்றால்‌, பெண்ணைவிடப்‌ பெருமையுடையவை வேறு என்ன இருக்கின்றன?',
+'What is more excellent than a wife, if she possess the stability of chastity?');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id) VALUES (54, 54, 6);
+
+-- Kural 55
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (55, 55, 'தெய்வம் தொழாஅள் கொழுநன் தொழுதெழுவாள்', 'பெய்யெனப் பெய்யும் மழை',
+'No God adoring, low she bends before her lord;', 
+'Then rising, serves: the rain falls instant at her word!');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (55, 55, 
+'வேறு தெய்வம்‌ தொழாதவளாய்த்‌ தன்‌ கணவனையே தெய்வமாகக்‌ கொண்டு தொழுது துயிலெழுகின்றவள்‌ பெய்‌ என்றால்‌ மழை பெய்யும்‌!',
+'If she, who does not worship God, but who rising worships her husband, say, “let it rain,” it will rain.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id) VALUES (55, 55, 6);
+
+-- Kural 56
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (56, 56, 'தற்காத்துத் தற்கொண்டாற் பேணித் தகைசான்ற', 'சொற்காத்துச் சோர்விலாள் பெண்',
+'Who guards herself, for husband’s comfort cares, her household’s fame,', 
+'In perfect wise with sleepless soul preserves, - give her a woman’s name.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (56, 56, 
+'கற்புநெறியில்‌ தன்னையும்‌ காத்துக்கொண்டு, தன்‌ கணவனையும்‌ காப்பாற்றி, தகுதியமைந்த புகழையும்‌ காத்து, உறுதி தளராமல்‌ வாழ்கின்றவளே பெண்‌.',
+'She is a wife who unweariedly guards herself, takes care of her husband, and preserves an unsullied fame.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id) VALUES (56, 56, 6);
+
+-- Kural 57
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  57, 57,
+  'சிறைகாக்கும் காப்பெவன் செய்யும் மகளிர்',
+  'நிறைகாக்கும் காப்பே தலை',
+  'Of what avail is watch and ward?',
+  'Honour’s woman’s safest guard.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  57, 57,
+  'மகளிரைக் காவல் வைத்துக் காக்கும் காப்புமுறை என்ன பயனை உண்டாக்கும்? அவர்கள் நிறை என்னும் பண்பால் தம்மைத் தாம் காக்கும் காப்பே சிறந்தது.',
+  'What avails the guard of a prison? The chief guard of a woman is her chastity.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  57, 57, 6
+);
+
+-- Kural 58
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  58, 58,
+  'பெற்றாற் பெறின்பெறுவர் பெண்டிர் பெருஞ்சிறப்புப்',
+  'புத்தேளிர் வாழும் உலகு',
+  'If wife be wholly true to him who gained her as his bride,',
+  'Great glory gains she in the world where gods bliss abide.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  58, 58,
+  'கணவனைப் போற்றிக் கடமையைச் செய்யப் பெற்றால் மகளிர் பெரிய சிறப்பை உடைய மேலுலக வாழ்வைப் பெறுவர்.',
+  'If women shew reverence to their husbands, they will obtain great excellence in the world where the gods flourish.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  58, 58, 6
+);
+
+-- Kural 59
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  59, 59,
+  'புகழ்புரிந்த இல்லிலோர்க்கு இல்லை இகழ்வார்முன்',
+  'ஏறுபோல் பீடு நடை',
+  'Who have not spouses that in virtue’s praise delight,',
+  'They lion-like can never walk in scorner’s sight.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  59, 59,
+  'புகழைக் காக்க விரும்பும் மனைவி இல்லாதவர்க்கு, இகழ்ந்து பேசும் பகைவர்முன் காளைபோல் நடக்கும் பெருமித நடை இல்லை.',
+  'The man whose wife seeks not the praise (of chastity) cannot walk with lion-like stately step, before those who revile them.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  59, 59, 6
+);
+
+-- Kural 60
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  60, 60,
+  'மங்கலம் என்ப மனைமாட்சி மற்றுஅதன்',
+  'நன்கலம் நன்மக்கட் பேறு',
+  'The house’s “blessing”, men pronounce the house-wife excellent;',
+  'The gain of blessed children is its goodly ornament.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  60, 60,
+  'மனைவியின் நற்பண்பே இல்வாழ்க்கைக்கு மங்கலம் என்று கூறுவர்; நல்ல மக்களைப் பெறுதலே அதற்கு நல்லணிகலம் என்றும் கூறுவர்.',
+  'The excellence of a wife is the good of her husband; and good children are the jewels of that goodness.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  60, 60, 6
+);
+
+-------------------------------------------------------------------------------------
+
+Chapter-7 kurals
+
+-- Chapter 7 - "புதல்வரைப் பெறுதல்" (The Obtaining of Sons)
+
+-- Kural 61
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  61, 61,
+  'பெறுமவற்றுள் யாமறிவது இல்லை அறிவறிந்த',
+  'மக்கட்பேறு அல்ல பிற',
+  'Of all that men acquire, we know not any greater gain,',
+  'Than that which by the birth of learned children men obtain.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  61, 61,
+  'பெறத் தகுந்த பேறுகளில், அறியவேண்டியவைகளை அறியும் நன்மக்களைப் பெறுவதைத் தவிர மற்றப் பேறுகளை யாம் மதிப்பதில்லை.',
+  'Among all the benefits that may be acquired, we know no greater benefit than the acquisition of intelligent children.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  61, 61, 7
+);
+
+-- Kural 62
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  62, 62,
+  'எழுபிறப்பும் தீயவை தீண்டா பழிபிறங்காப்',
+  'பண்புடை மக்கட் பெறின்',
+  'Who children gain, that none reproach, of virtuous worth,',
+  'No evils touch them, through the sev’n-fold maze of birth.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  62, 62,
+  'பழி இல்லாத நல்ல பண்பு உடைய மக்களைப் பெற்றால் ஒருவனுக்கு ஏழு பிறவியிலும் தீவினைப் பயனாகிய துன்பங்கள் சென்று சேரா.',
+  'The evils of the seven births shall not touch those who obtain children of a good disposition, free from vice.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  62, 62, 7
+);
+
+-- Kural 63
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  63, 63,
+  'தம்பொருள் என்பதம் மக்கள் அவர்பொருள்',
+  'தம்தம் வினையான் வரும்',
+  '‘Man’s children are his fortune,’ say the wise;',
+  'From each one’s deeds his varied fortunes rise.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  63, 63,
+  'தம் மக்களே தம்முடைய பொருள்கள் என்று அறிஞர் கூறுவர்; மக்களாகிய அவர்தம் பொருள்கள் அவரவருடைய வினையின் பயனால் வந்து சேரும்.',
+  'Men will call their sons their wealth, because it flows to them through the deeds which they (sons) perform on their behalf.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  63, 63, 7
+);
+
+-- Kural 64
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  64, 64,
+  'அமிழ்தினும் ஆற்ற இனிதேதம் மக்கள்',
+  'சிறுகை அளாவிய கூழ்',
+  'Than God''s ambrosia sweeter far the food before men laid,',
+  'In which the little hands of children of their own have play’d.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  64, 64,
+  'தம்முடைய மக்களின் சிறு கைகளால் அளாவப்பெற்ற உணவு, பெற்றோர்க்கு அமிழ்தத்தைவிட மிக்க இனிமை உடையதாகும்.',
+  'The rice in which the little hand of their children has dabbled will be far sweeter (to the parent) than ambrosia.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  64, 64, 7
+);
+
+-- Kural 65
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+)
+VALUES (
+  65, 65,
+  'மக்கள்மெய் தீண்டல் உடற்கின்பம் மற்றுஅவர்',
+  'சொற்கேட்டல் இன்பம் செவிக்கு',
+  'To parent sweet the touch of children dear;',
+  'Their voice is sweetest music to his ear.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+)
+VALUES (
+  65, 65,
+  'மக்களின் உடம்பைத் தொடுதல் உடம்பிற்கு இன்பம் தருவதாகும்; அம் மக்களின் மழலைச் சொற்களைக் கேட்டல் செவிக்கு இன்பம் தருவதாகும்.',
+  'The touch of children gives pleasure to the body, and the hearing of their words, pleasure to the ear.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+)
+VALUES (
+  65, 65, 7
+);
+
+-- Kural 66
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  66, 66,
+  'குழல்இனிது யாழ்இனிது என்பதம் மக்கள்',
+  'மழலைச்சொல் கேளா தவர்',
+  '“The pipe is sweet,” “the lute is sweet,” by them’t will be averred,',
+  'Who music of their infants’ lisping lips have never heard.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+) VALUES (
+  66, 66,
+  'தம் மக்களின் மழலைச் சொல்லைக் கேட்டு அதன் இனிமையை நுகராதவரே குழலின் இசை இனியது, யாழின் இசை இனியது என்று கூறுவர்.',
+  '“The pipe is sweet, the lute is sweet,” say those who have not heard the prattle of their own children.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+) VALUES (
+  66, 66, 7
+);
+
+-- Kural 67
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  67, 67,
+  'தந்தை மகற்காற்று நன்றி அவையத்து',
+  'முந்தி இருப்பச் செயல்',
+  'Sire greatest boon on son confers, who makes him meet,',
+  'In councils of the wise to fill the highest seat.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+) VALUES (
+  67, 67,
+  'தந்தை தன் மகனுக்குச் செய்யத்தக்க நல்லுதவி, கற்றவர் கூட்டத்தில் தன் மகன் முந்தியிருக்கும்படியாக அவனைக் கல்வியில் மேம்படச் செய்தலாகும்.',
+  'The benefit which a father should confer on his son is to give him precedence in the assembly of the learned.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+) VALUES (
+  67, 67, 7
+);
+
+-- Kural 68
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  68, 68,
+  'தம்மின்தம் மக்கள் அறிவுடைமை மாநிலத்து',
+  'மன்னுயிர்க் கெல்லாம் இனிது',
+  'Their children’s wisdom greater than their own confessed,',
+  'Through the wide world is sweet to every human breast.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+) VALUES (
+  68, 68,
+  'தம் மக்களின் அறிவுடைமை, தமக்கு இன்பம் பயப்பதைவிட உலகத்து உயிர்களுக்கெல்லாம் மிகுந்த இன்பம் பயப்பதாகும்.',
+  'That their children should possess knowledge is more pleasing to all men of this great earth than to themselves.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+) VALUES (
+  68, 68, 7
+);
+
+-- Kural 69
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  69, 69,
+  'ஈன்ற பொழுதின் பெரிதுவக்கும் தன்மகனைச்',
+  'சான்றோன் எனக்கேட்ட தாய்',
+  'When mother hears him named “fulfill’d of wisdom’s lore,”',
+  'Far greater joy she feels, than when her son she bore.'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+) VALUES (
+  69, 69,
+  'தன் மகனை நற்பண்பு நிறைந்தவன் எனப் பிறர் சொல்லக் கேள்வியுற்ற தாய், தான் அவனைப் பெற்ற காலத்து உற்ற மகிழ்ச்சியைவிடப் பெரிதும் மகிழ்வாள்.',
+  'The mother who hears her son called “a wise man” will rejoice more than she did at his birth.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+) VALUES (
+  69, 69, 7
+);
+
+-- Kural 70
+INSERT INTO kural (
+  id, kural_number,
+  kural_tamil_line1, kural_tamil_line2,
+  kural_english_line1, kural_english_line2
+) VALUES (
+  70, 70,
+  'மகன்தந்தைக்கு ஆற்றும் உதவி இவன்தந்தை',
+  'என்நோற்றான் கொல்எனும் சொல்',
+  'To sire, what best requital can by grateful child be done?',
+  'To make men say, “What merit gained the father such a son?”'
+);
+
+INSERT INTO meaning (
+  m_id, kural_id,
+  meaning_tamil, meaning_english
+) VALUES (
+  70, 70,
+  'மகன் தன் தந்தைக்குச் செய்யத்தக்க கைம்மாறு, “இவன் தந்தை இவனை மகனாகப் பெற என்ன தவம் செய்தானோ” என்று பிறர் புகழ்ந்து சொல்லும் சொல்லாகும்.',
+  'So to act that it may be said “By what great penance did his father beget him?” is the benefit which a son should render to his father.'
+);
+
+INSERT INTO thirukkural (
+  id, kural_id, chapter_id
+) VALUES (
+  70, 70, 7
+);
+
+------------------------------------------------------------------------------------------------------
+
+Chapter-8 Kurals
+
+-- Chapter 8: Anbudaimai (The Possession of Love)
+
+-- Kural 71
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (
+  71, 71,
+  'அன்பிற்கும் உண்டோ அடைக்குந்தாழ் ஆர்வலர்',
+  'புன்கணீர் பூசல் தரும்',
+  'And is there bar that can even love restrain?',
+  'The tiny tear shall make the lover’s secret plain.'
+);
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (
+  71, 71,
+  'அன்புக்கும் அடைத்துவைக்கும் தாழ் உண்டோ? அன்புடையவரின் சிறு கண்ணீரே (உள்ளே இருக்கும் அன்பைப்) பலரும் அறிய வெளிப்படுத்திவிடும்.',
+  'Is there any fastening that can shut in love? Tears of the affectionate will publish the love that is within.'
+);
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (71, 71, 8);
+
+-- Kural 72
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (
+  72, 72,
+  'அன்பிலார் எல்லாம் தமக்குரியர் அன்புடையார்',
+  'என்பும் உரியர் பிறர்க்கு',
+  'The loveless to themselves belong alone;',
+  'The loving men are others’ to the very bone.'
+);
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (
+  72, 72,
+  'அன்பு இல்லாதவர் எல்லாப் பொருளையும் தமக்கே உரிமையாகக் கொண்டு வாழ்வர்; அன்பு உடையவர் தம் உடம்பையும் பிறர்க்கு உரிமையாக்கி வாழ்வர்.',
+  'Those who are destitute of love appropriate all they have to themselves; but those who possess love consider even their bones to belong to others.'
+);
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (72, 72, 8);
+
+-- Kural 73
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (
+  73, 73,
+  'அன்போடு இயைந்த வழக்கென்ப ஆருயிர்க்கு',
+  'என்போடு இயைந்த தொடர்பு',
+  'Of precious soul with body’s flesh and bone,',
+  'The union yields one fruit, the life of love alone.'
+);
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (
+  73, 73,
+  'அருமையான உயிர்க்கு உடம்போடு பொருந்தி இருக்கின்ற உறவு, அன்போடு பொருந்தி வாழும் வாழ்க்கையின் பயன் என்று கூறுவர்.',
+  'They say that the union of soul and body in man is the fruit of the union of love and virtue (in a former birth).'
+);
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (73, 73, 8);
+
+-- Kural 74
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (
+  74, 74,
+  'அன்புஈனும் ஆர்வம் உடைமை அதுஈனும்',
+  'நண்பென்னும் நாடாச் சிறப்பு',
+  'From love fond yearning springs for union sweet of minds;',
+  'And that the bond of rare excelling friendship binds.'
+);
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (
+  74, 74,
+  'அன்பு, பிறரிடம் விருப்பம் உடையவராக வாழும் தன்மையைத் தரும்; அஃது எல்லோரிடத்திலும் நட்பு என்று சொல்லப்படும் அளவற்ற சிறப்பைத் தரும்.',
+  'Love begets desire: and that (desire) begets the immeasureable excellence of friendship.'
+);
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (74, 74, 8);
+
+-- Kural 75
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (
+  75, 75,
+  'அன்புற்று அமர்ந்த வழக்கென்ப வையகத்து',
+  'இன்புற்றார் எய்தும் சிறப்பு',
+  'Sweetness on earth and rarest bliss above,',
+  'These are the fruits of tranquil life of love.'
+);
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (
+  75, 75,
+  'உலகத்தில் இன்பம் உற்று வாழ்கின்றவர் அடையும் சிறப்பு, அன்பு உடையவராகிப் பொருந்தி வாழும் வாழ்க்கையின் பயன் என்று கூறுவர்.',
+  'They say that the felicity which those who, after enjoying the pleasure (of the conjugal state) in this world, obtain in heaven is the result of their domestic state imbued with love.'
+);
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (75, 75, 8);
+
+-- Kural 76
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (
+  76, 76,
+  'அறத்திற்கே அன்புசார் பென்ப அறியார்',
+  'மறத்திற்கும் அஃதே துணை',
+  'The unwise deem love virtue only can sustain,',
+  'It also helps the man who evil would restrain.'
+);
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (
+  76, 76,
+  'அறியாதவர், அறத்திற்கு மட்டுமே அன்பு துணையாகும் என்று கூறுவர்; ஆராய்ந்து பார்த்தால் வீரத்திற்கும் அதுவே துணையாக நிற்கின்றது.',
+  'The ignorant say that love is an ally to virtue only, but it is also a help to get out of vice.'
+);
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (76, 76, 8);
+
+-- Kural 77
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (
+  77, 77,
+  'என்பி லதனை வெயில்போலக் காயுமே',
+  'அன்பி லதனை அறம்',
+  'As sun’s fierce ray dries up the boneless things,',
+  'So loveless beings virtue’s power to nothing brings.'
+);
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (
+  77, 77,
+  'எலும்பு இல்லாத உடம்போடு வாழும் புழுவை வெயில் காய்ந்து வருத்துவதுபோல், அன்பு இல்லாத உயிரை அறம் வருத்தும்.',
+  'Virtue will burn up the soul which is without love, even as the sun burns up the creature which is without bone, i.e. worms.'
+);
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (77, 77, 8);
+
+-- Kural 78
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (
+  78, 78,
+  'அன்பகத் தில்லா உயிர்வாழ்க்கை வன்பாற்கண்',
+  'வற்றல் மரந்தளிர்த் தற்று',
+  'The loveless soul, the very joys of life may know,',
+  'When flowers, in barren soil, on sapless trees, shall blow.'
+);
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (
+  78, 78,
+  'அகத்தில் அன்பு இல்லாமல் வாழும் உயிர்வாழ்க்கை வளமற்ற பாலைநிலத்தில் பட்டமரம் தளிர்த்தாற் போன்றது.',
+  'The domestic state of that man whose mind is without love is like the flourishing of a withered tree upon the parched desert.'
+);
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (78, 78, 8);
+
+-- Kural 79
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (
+  79, 79,
+  'புறத்துறுப் பெல்லாம் எவன்செய்யும் யாக்கை',
+  'அகத்துறுப்பு அன்பி லவர்க்கு',
+  'Though every outward part complete, the body’s fitly framed;',
+  'What good, when soul within, of love devoid, lies halt and maimed?'
+);
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (
+  79, 79,
+  'உடம்பின் அகத்து உறுப்பாகிய அன்பு இல்லாதவர்க்கு உடம்பின் புறத்து உறுப்புக்கள் எல்லாம் என்ன பயன் செய்யும்?',
+  'Of what avail are all the external members (of the body) to those who are destitute of love, the internal member.'
+);
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (79, 79, 8);
+
+-- Kural 80
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (
+  80, 80,
+  'அன்பின் வழியது உயிர்நிலை அஃதிலார்க்கு',
+  'என்புதோல் போர்த்த உடம்பு',
+  'Bodies of loveless men are bony framework clad with skin;',
+  'Then is the body seat of life, when love resides within.'
+);
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (
+  80, 80,
+  'அன்பின் வழியில் இயங்கும் உடம்பே உயிர்நின்ற உடம்பாகும்; அன்பு இல்லாதவர்க்கு உள்ள உடம்பு எலும்பைத் தோல் போர்த்த வெற்றுடம்பே ஆகும்.',
+  'That body alone which is inspired with love contains a living soul: if void of it, (the body) is bone overlaid with skin.'
+);
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (80, 80, 8);
+
+--------------------------------------------------------------------------------
+
+Chapter-9 Kurals
+
+-- Chapter 9: விருந்தோம்பல் (Cherishing Guests)
+
+-- Kural 81
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (81, 81, 'இருந்தோம்பி இல்வாழ்வ தெல்லாம்', 'விருந்தோம்பி வேளாண்மை செய்தற் பொருட்டு',
+'All household cares and course of daily life have this in view,', 
+'Guests to receive with courtesy, and kindly acts to do.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (81, 81,
+'வீட்டில் இருந்து பொருள்களைக் காத்து இல்வாழ்க்கை நடத்துவதெல்லாம் விருந்தினரைப் போற்றி உதவிசெய்யும் பொருட்டே ஆகும்.',
+'The whole design of living in the domestic state and laying up (property) is (to be able) to exercise the benevolence of hospitality.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (81, 81, 9);
+
+-- Kural 82
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (82, 82, 'விருந்து புறத்ததாத் தானுண்டல்', 'சாவா மருந்தெனினும் வேண்டாற்பாற் றன்று',
+'Though food of immortality should crown the board,',
+'Feasting alone, the guests without unfed, is thing abhorred.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (82, 82,
+'விருந்தினராக வந்தவர் வீட்டின் புறத்தே இருக்கத் தான் மட்டும் உண்பது சாவாமருந்தாகிய அமிழ்தமே ஆனாலும் அது விரும்பத்தக்கது அன்று.',
+'It is not fit that one should wish his guests to be outside (his house) even though he were eating the food of immortality.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (82, 82, 9);
+
+-- Kural 83
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (83, 83, 'வருவிருந்து வைகலும் ஓம்புவான் வாழ்க்கை', 'பருவந்து பாழ்படுதல் இன்று',
+'Each day he tends the coming guest with kindly care;',
+'Painless, unfailing plenty shall his household share.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (83, 83,
+'தன்னை நோக்கி வரும் விருந்தினரை நாள்தோறும் போற்றுகின்றவனுடைய வாழ்க்கை, துன்பத்தால் வருந்திக் கெட்டுப் போவதில்லை.',
+'The domestic life of the man that daily entertains the guests who come to him shall not be laid waste by poverty.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (83, 83, 9);
+
+-- Kural 84
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (84, 84, 'அகனமர்ந்து செய்யாள் உறையும்', 'முகனமர்ந்து நல்விருந்து ஓம்புவான் இல்',
+'With smiling face he entertains each virtuous guest,',
+'‘Fortune’ with gladsome mind shall in his dwelling rest.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (84, 84,
+'நல்ல விருந்தினராய் வந்தவரை முகமலர்ச்சி கொண்டு போற்றுகின்றவனுடைய வீட்டில் மனமகிழ்ந்து திருமகள் வாழ்வாள்.',
+'Lakshmi with joyous mind shall dwell in the house of that man who, with cheerful countenance, entertains the good as guests.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (84, 84, 9);
+
+-- Kural 85
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (85, 85, 'வித்தும் இடல்வேண்டும் கொல்லோ', 'விருந்தோம்பி மிச்சில் மிசைவான் புலம்',
+'Who first regales his guest, and then himself supplies,',
+'O’er all his fields, unsown, shall plenteous harvests rise.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (85, 85,
+'விருந்தினரை முன்னே போற்றி உணவளித்து மிஞ்சிய உணவை உண்டு வாழ்கின்றவனுடைய நிலத்தில் விதையும் விதைக்க வேண்டுமோ?',
+'Is it necessary to sow the field of the man who, having feasted his guests, eats what may remain ?');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (85, 85, 9);
+
+-- Kural 86
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (86, 86, 'செல்விருந்து ஓம்பி வருவிருந்து பார்த்திருப்பான்', 'நல்வருந்து வானத் தவர்க்கு',
+'The guest arrived he tends, the coming guest expects to see;',
+'To those in heavenly homes that dwell a welcome guest is he.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (86, 86,
+'வந்த விருந்தினரைப் போற்றி, இனி வரும் விருந்தினரை எதிர்பார்த்திருப்பவன், வானுலகத்தில் உள்ள தேவர்க்கும் நல்ல விருந்தினனாவான்.',
+'He who, having entertained the guests that have come, looks out for others who may yet come, will be a welcome guest to the inhabitants of heaven.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (86, 86, 9);
+
+-- Kural 87
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (87, 87, 'இனைத்துணைத் தென்பதொன் றில்லை', 'விருந்தின் துணைத்துணை வேள்விப் பயன்',
+'To reckon up the fruit of kindly deeds were all in vain;',
+'Their worth is as the worth of guests you entertain.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (87, 87,
+'விருந்தோம்புதலாகிய வேள்வியின் பயன் இவ்வளவு என்று அளவு படுத்திக் கூறத்தக்கது அன்று; விருந்தினரின் தகுதிக்கு ஏற்ற அளவினதாகும்.',
+'The advantages of benevolence cannot be measured; the measure (of the virtue) of the guests (entertained) is the only measure.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (87, 87, 9);
+
+-- Kural 88
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (88, 88, 'பரிந்தோம்பிப் பற்றற்றேம் என்பர்', 'விருந்தோம்பி வேள்வி தலைப்படா தார்',
+'With pain they guard their stores, yet ‘All forlorn are we,’ they’ll cry,',
+'Who cherish not their guests, nor kindly help supply.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (88, 88,
+'விருந்தினரை ஓம்பி அந்த வேள்வியில் ஈடுபடாதவர், பொருள்களை வருந்திக் காத்து (பின்பு இழந்து) பற்றுக் கோடு இழந்தோமே என்று இரங்குவர்.',
+'Those who have taken no part in the benevolence of hospitality shall (at length lament) saying, “we have laboured and laid up wealth and are now without support.”');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (88, 88, 9);
+
+-- Kural 89
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (89, 89, 'உடைமையுள் இன்மை', 'விருந்தோம்பல் ஓம்பா மடமை மடவார்கண் உண்டு',
+'To turn from guests is penury, though worldly goods abound;',
+'‘Tis senseless folly, only with the senseless found.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (89, 89,
+'செல்வ நிலையில் உள்ள வறுமை என்பது விருந்தோம்புதலைப் போற்றாத அறியாமையாகும்; அஃது அறிவிலிகளிடம் உள்ளதாகும்.',
+'That stupidity which exercises no hospitality is poverty in the midst of wealth. It is the property of the stupid.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (89, 89, 9);
+
+-- Kural 90
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (90, 90, 'மோப்பக் குழையும் அனிச்சம்', 'முகந்திரிந்து நோக்கக் குநழ்யும் விருந்து',
+'The flower of ‘Anicha’ withers away, If you do but its fragrance inhale;',
+'If the face of the host cold welcome convey, The guest’s heart within him will fail.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (90, 90,
+'அனிச்சப்பூ மோந்தவுடன் வாடிவிடும்; அதுபோல் முகம் மலராமல் வேறுபட்டு நோக்கியவுடன் விருந்தினர் வாடி நிற்பர்.',
+'As the Anicham flower fades in smelling, so fades the guest when the face is turned away.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (90, 90, 9);
+
+-----------------------------------------------------------------------------------------------------------
+
+Chapter-10 Kurals
+
+--kural 91
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (91, 91,
+'இன்சொலால் ஈரம் அளைஇப் படிறுஇலவாம்',
+'செம்பொருள் கண்டார்வாய்ச் சொல்',
+'Pleasant words are words with all pervading love that burn;',
+'Words from his guileless mouth who can the very truth discern.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (91, 91,
+'அன்பு கலந்து வஞ்சம் அற்றவைகளாகிய சொற்கள், மெய்ப்பொருள் கண்டவர்களின் வாய்ச்சொற்கள் இன்சொற்களாகும்.',
+'Sweet words are those which imbued with love and free from deceit flow from the mouth of the virtuous.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (91, 91, 10);
+
+--kural 92
+
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (92, 92,
+'அகன்அமர்ந்து ஈதலின் நன்றே முகனமர்ந்து',
+'இன்சொலன் ஆகப் பெறின்',
+'A pleasant word with beaming smiles preferred,',
+'Even to gifts with liberal heart conferred.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (92, 92,
+'முகம் மலர்ந்து இன்சொல் உடையவனாக இருக்கப் பெற்றால், மனம் மகிழ்ந்து பொருள் கொடுக்கும் ஈகையைவிட நல்லதாகும்.',
+'Sweet speech, with a cheerful countenance is better than a gift made with a joyous mind.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (92, 92, 10);
+
+--kural 93
+
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (93, 93,
+'முகத்தான் அமர்ந்துஇனிது நோக்கி அகத்தானாம்',
+'இன்சொ லினதே அறம்',
+'With brightly beaming smile, and kindly light of loving eye,',
+'And heart sincere, to utter pleasant words is charity.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (93, 93,
+'முகத்தால் விரும்பி - இனிமையுடன் நோக்கி - உள்ளம் கலந்து இன்சொற்களைக் கூறும் தன்மையில் உள்ளதே அறமாகும்.',
+'Sweet speech, flowing from the heart (uttered) with a cheerful countenance and a sweet look, is true virtue.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (93, 93, 10);
+
+--kural 94
+
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (94, 94,
+'துன்புறூஉம் துவ்வாமை இல்லாகும் யார்மாட்டும்',
+'இன்புறூஉம் இன்சொ லவர்க்கு',
+'The men of pleasant speech that gladness breathe around,',
+'Through indigence shall never sorrow’s prey be found.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (94, 94,
+'யாரிடத்திலும் இன்புறத்தக்க இன்சொல் வழங்குவோர்க்குத் துன்பத்தை மிகுதிப்படுத்தும் வறுமை என்பது இல்லையாகும்.',
+'Sorrow-increasing poverty shall not come upon those who use towards all, pleasure-increasing sweetness of speech.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (94, 94, 10);
+
+
+--kural 95
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (95, 95,
+'பணிவுடையன் இன்சொலன் ஆதல் ஒருவற்கு',
+'அணியல்ல மற்றுப் பிற',
+'Humility with pleasant speech to man on earth,',
+'Is choice adornment; all besides is nothing worth.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (95, 95,
+'வணக்கம் உடையவனாகவும் இன்சொல் வழங்குவோனாகவும் ஆதலே ஒருவனுக்கு அணிகலனாகும், மற்றைய அணிகள் அணிகள் அல்ல.',
+'Humility and sweetness of speech are the ornaments of man; all others are not (ornaments).');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (95, 95, 10);
+
+
+--kural 96
+
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (96, 96,
+'இனியவா சொல்லக்கேட்ட வையகம்', 
+'வன்கண்மா வன்னதூஉம் சால்பு',
+'A world that pleasant words desires to hear,',
+'Grows stronger when their sound falls on the ear.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (96, 96,
+'இனிய சொற்களைப் பேசி கேட்பதையே விரும்பும் உலகம், அருமையான வளத்தை உண்டாக்கும்.',
+'The world abides through those who speak pleasant words and listen to them with delight.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (96, 96, 10);
+
+
+--kural 97
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (97, 97,
+'தீயவை தீய பயத்தலால் சொல்லினும்', 
+'நேயமுடையவர் சொல்',
+'Though harsh the word, if from a friend it flow,',
+'Kindness behind its outward form will show.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (97, 97,
+'தீமை பயக்கும் வாக்காக இருந்தாலும், நேசத்தோடு கூறப்படும் சொல் தீயதாயிருக்காது.',
+'Even though a word may seem unpleasant, if spoken by one with love, it does not harm.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (97, 97, 10);
+
+
+--kural 98
+
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (98, 98,
+'செய்ந்நன்றி கூறுவான் வாழ்தல் ஒருவற்கு', 
+'இன்நன்றி கூறாதார் இல்',
+'The man who gratitude remembers lives indeed;',
+'Who no such feeling has, is like a lifeless weed.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (98, 98,
+'பிறர் செய்த நன்றியை நினைத்து அதைக் கூறுகிறவனே வாழ்கின்றான்; இனிய நன்றியை மனதில் கொள்ளாதவன் உயிரில்லாதவனே.',
+'He truly lives who gratefully recounts the kindness done; the ungrateful are as good as dead.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (98, 98, 10);
+
+
+--kural 99
+
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (99, 99,
+'இன்சொல் இனிதீன்றல் காண்பான் எவன்கொலோ', 
+'வன்சொல் வழங்கு வவன்',
+'Can he who knows the sweets of pleasant speech,',
+'In bitter words his thoughts and tongue impeach?');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (99, 99,
+'இன்சொல்லின் மகிமையை உணர்ந்தவன், கடுஞ்சொல் சொல்ல வல்லவனாக இருப்பாரா?',
+'Will one who has tasted the sweetness of gentle speech ever use harsh words?');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (99, 99, 10);
+
+
+--kural 100
+
+INSERT INTO kural (id, kural_number, kural_tamil_line1, kural_tamil_line2, kural_english_line1, kural_english_line2)
+VALUES (100, 100,
+'இனிய உளவாக இன்னாத கூறல்', 
+'கனிஇருப்பக் காய்கவர்ந் தற்று',
+'To speak harsh words while kind ones lie at hand,',
+'Is like plucking unripe fruit when ripe ones stand.');
+
+INSERT INTO meaning (m_id, kural_id, meaning_tamil, meaning_english)
+VALUES (100, 100,
+'இனிய சொற்கள் உள்ளபோதிலும், இன்னாத சொற்களையே கூறுவது, கனிகள் இருக்கையில் புளிப்புக் காய்களைப் பறிப்பதைப் போன்றது.',
+'To utter disagreeable words while sweet ones are available is like eating raw fruit while ripe ones are at hand.');
+
+INSERT INTO thirukkural (id, kural_id, chapter_id)
+VALUES (100, 100, 10);
+
+------------------------------------------------------------------------------------------------------------
+
+
+Chapter 11 to 20
+
+
+
+Chapter-11 kurals
+
+
+
